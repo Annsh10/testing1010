@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Skincare Plan</title>
+  <!-- Direct static path (no url_for) -->
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <div class="main-card">
+
+    <!-- Download Button (server route: /download) -->
+    <a href="/download" class="download-btn">Download the Skincare Plan</a>
+
+    <!-- Skin Analysis -->
+    <div class="sub-card">
+      <h2>Skin Analysis</h2>
+      <p>{{ plan.skin_analysis or "" }}</p>
+    </div>
+
+    <!-- Morning & Evening Routine -->
+    <div class="row">
+      <div class="sub-card col">
+        <h2>Morning Routine</h2>
+        <ul>
+          {% for step in plan.morning_routine or [] %}
+            <li>{{ step }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="sub-card col">
+        <h2>Evening Routine</h2>
+        <ul>
+          {% for step in plan.evening_routine or [] %}
+            <li>{{ step }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Diet Tips -->
+    <div class="sub-card">
+      <h2>Diet Tips</h2>
+      <ul>
+        {% for tip in plan.diet_tips or [] %}
+          <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Lifestyle -->
+    <div class="sub-card">
+      <h2>Lifestyle</h2>
+      <ul>
+        {% for tip in plan.lifestyle or [] %}
+          <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- If you previously referenced JS using url_for, change it to this -->
+  <script src="../static/main.js"></script>
+</body>
+</html>

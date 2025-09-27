@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f2f5;
+  padding: 30px;
+  color: #333;
+}
+
+/* Main card */
+.main-card {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+/* Download button */
+.download-btn {
+  display: block;
+  text-align: center;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.3);
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #5a67d8, #6b46c1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.4);
+}
+
+/* Sub cards with transparent accent background */
+.sub-card {
+  background: linear-gradient(135deg, rgba(102,126,234,0.08), rgba(118,75,162,0.08));
+  border: 1px solid rgba(102, 126, 234, 0.25);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 14px 0;
+  transition: all 0.3s ease;
+}
+
+.sub-card:hover {
+  background: linear-gradient(135deg, rgba(102,126,234,0.12), rgba(118,75,162,0.12));
+  border-color: rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+/* Layout rows & columns */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+/* Headings with color hierarchy */
+h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4c51bf; /* subtle accent */
+  border-left: 4px solid #667eea;
+  padding-left: 10px;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}

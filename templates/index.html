@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Skincare Planner</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <div class="main-card">
+    <h1>Personalized Skincare Routine</h1>
+    <form id="skincareForm">
+      
+      <!-- Age -->
+      <label><b>Select your Age:</b></label>
+      <div class="option-group grid-5">
+        <label><input type="radio" name="age" value="Under 18" required> Under 18</label>
+        <label><input type="radio" name="age" value="18-25"> 18–25</label>
+        <label><input type="radio" name="age" value="26-35"> 26–35</label>
+        <label><input type="radio" name="age" value="36-50"> 36–50</label>
+        <label><input type="radio" name="age" value="50+"> 50+</label>
+      </div>
+
+      <!-- Skin Type -->
+      <label><b>Skin Type:</b></label>
+      <div class="option-group grid-4">
+        <label><input type="radio" name="skin_type" value="Oily" required> Oily</label>
+        <label><input type="radio" name="skin_type" value="Dry"> Dry</label>
+        <label><input type="radio" name="skin_type" value="Combination"> Combination</label>
+        <label><input type="radio" name="skin_type" value="Sensitive"> Sensitive</label>
+      </div>
+
+      <!-- Goals -->
+      <label><b>What are your skincare goals?</b></label>
+      <div class="option-group grid-3">
+        <label><input type="checkbox" name="goals" value="Remove tan"> Remove Tan</label>
+        <label><input type="checkbox" name="goals" value="Brighten skin tone"> Brighten Skin Tone</label>
+        <label><input type="checkbox" name="goals" value="Reduce blackheads"> Reduce Blackheads</label>
+        <label><input type="checkbox" name="goals" value="Clear acne marks"> Clear Acne Marks</label>
+        <label><input type="checkbox" name="goals" value="Shrink pores"> Shrink Pores</label>
+        <label><input type="checkbox" name="goals" value="Control oiliness"> Control Oiliness</label>
+        <label><input type="checkbox" name="goals" value="Hydration"> Hydration</label>
+        <label><input type="checkbox" name="goals" value="Anti-aging"> Anti-Aging</label>
+      </div>
+
+      <!-- Other -->
+      <label><b>Other specific goals or concerns:</b></label>
+      <input type="text" id="other" name="other" placeholder="Enter your concerns">
+
+      <button type="submit" class="download-btn">Generate My Routine Plan</button>
+    </form>
+  </div>
+  
+  <script src="../static/main.js"></script>
+</body>
+</html>

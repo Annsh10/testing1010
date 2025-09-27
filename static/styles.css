@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #fafbff, #f3f5fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Card */
+.main-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  width: 650px;
+  max-width: 95%;
+  transition: all 0.3s ease;
+}
+
+.main-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+.main-card h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+/* Section Labels */
+label {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  display: block;
+  color: #444;
+}
+
+/* Option groups with grid layout */
+.option-group {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+/* Different layouts per section */
+.grid-5 { grid-template-columns: repeat(5, 1fr); } /* For Age */
+.grid-4 { grid-template-columns: repeat(4, 1fr); } /* For Skin Type */
+.grid-3 { grid-template-columns: repeat(3, 1fr); } /* For Goals */
+
+/* Option box style */
+.option-group label {
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f7f8fc;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e3eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.option-group input {
+  accent-color: #7a5cff;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Hover effect */
+.option-group label:hover {
+  background: #f0f2fa;
+  border-color: #c9cff5;
+}
+
+/* Textbox */
+#other {
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  padding: 10px 12px;
+  margin-top: 0.5rem;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+#other:focus {
+  border-color: #7a5cff;
+  box-shadow: 0 0 6px rgba(122, 92, 255, 0.25);
+}
+
+/* Button */
+.download-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #7a5cff, #8e84ff);
+  color: #fff;
+  font-size: 1rem;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1.2rem;
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #6a4bff, #7d70ff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(122, 92, 255, 0.3);
+}
